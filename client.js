@@ -17,13 +17,12 @@ const connect = function () {
     conn.on("connect", () => {
         conn.write("Name: OSC")
     })
-    
+
     conn.on('data', (data) => {
       console.log(data.toString());
     });
 
     return conn;
   };
-  console.log("Connecting ...");
-
+  
   module.exports = {connect};
