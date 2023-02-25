@@ -1,4 +1,5 @@
 let connection;
+let { inputKeys } = require('./constants')
 
 const setupInput = (conn) => {
     connection = conn;
@@ -14,25 +15,25 @@ const handleUserInput = function (data) {
     // your code here
     if(data === '\u0003') {
         process.exit();
-    } else if (data === 'w') {
+    } else if (data === inputKeys.MOVE_UP_KEY) {
         connection.write('Move: up')
-    } else if (data === 'a') {
+    } else if (data === inputKeys.MOVE_LEFT_KEY) {
         connection.write('Move: left')
-    } else if (data === 's') {
+    } else if (data === inputKeys.MOVE_DOWN_KEY) {
         connection.write('Move: down')
-    } else if (data === 'd') {
+    } else if (data === inputKeys.MOVE_RIGHT_KEY) {
         connection.write('Move: right')
-    } else if (data === '1') {
+    } else if (data === inputKeys.SAY_WOW_KEY) {
         connection.write('Say: Wow')
-    } else if (data === '2') {
+    } else if (data === inputKeys.SAY_GG_KEY) {
         connection.write('Say: GG') 
-    } else if (data === '3') {
+    } else if (data === inputKeys.SAY_HAHA_KEY) {
         connection.write('Say: HaHa') 
-    } else if (data === '4') {
+    } else if (data === inputKeys.SAY_LETS_PLAY_AGAIN_KEY) {
         connection.write("Say: Let's play again") 
-    } else if (data === '5') {
+    } else if (data === inputKeys.SAY_SURE_KEY) {
         connection.write("Say: Sure") 
-    } else if (data === '6') {
+    } else if (data === inputKeys.SAY_NO_THANKS_KEY) {
         connection.write("Say: No thanks") 
     }
 };
