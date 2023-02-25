@@ -16,6 +16,7 @@ const handleUserInput = function (data) {
     // \u0003 = ctrl + c
     if(data === '\u0003') {
         process.exit();
+        //MOVEMENT KEYS
     } else if (data === inputKeys.MOVE_UP_KEY) {
         connection.write('Move: up')
     } else if (data === inputKeys.MOVE_LEFT_KEY) {
@@ -24,6 +25,7 @@ const handleUserInput = function (data) {
         connection.write('Move: down')
     } else if (data === inputKeys.MOVE_RIGHT_KEY) {
         connection.write('Move: right')
+        //QUICK CHAT KEYS
     } else if (data === inputKeys.SAY_WOW_KEY) {
         connection.write('Say: Wow')
     } else if (data === inputKeys.SAY_GG_KEY) {
