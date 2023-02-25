@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot description"](#)
+!["Screenshot of snek on screen](/Screenshots/Screenshot%202023-02-25%20122013.png)
 !["screenshot description"](#)
 
 ## Getting Started
@@ -20,16 +20,16 @@ Before you can run this client, you will need to be running the server side whic
 
 To move the snake you can use the following keys:
 
-W = up
-A = left
-S = down
-D = right
+**W = up**
+**A = left**
+**S = down**
+**D = right**
 
 If you'd like to chat with other players I've added some quick chat messages to send to each other
 
-1 = Wow
-2 = GG (Good Game)
-3 = HaHa
-4 = Let's to play again
-5 = Sure
-6 = No thanks
+**1 = Wow**
+**2 = GG (Good Game)**
+**3 = HaHa**
+**4 = Let's to play again**
+**5 = Sure**
+**6 = No thanks**
