@@ -11,8 +11,9 @@ const setupInput = (conn) => {
     return stdin;
 };
 
+//handle all of the user inputs
 const handleUserInput = function (data) {
-    // your code here
+    // \u0003 = ctrl + c
     if(data === '\u0003') {
         process.exit();
     } else if (data === inputKeys.MOVE_UP_KEY) {

@@ -1,6 +1,9 @@
+//IP is equal to localhost because the server is opened in another terminal
 const IP = 'localhost';
 const PORT = 50541;
 
+
+//this object handles user inputs
 const inputKeys = {
     MOVE_UP_KEY: 'w',
     MOVE_LEFT_KEY: 'a',
@@ -14,6 +17,7 @@ const inputKeys = {
     SAY_NO_THANKS_KEY: '6',
 };
 
+//export the consts to other files
 module.exports = {
     inputKeys,
     IP,
